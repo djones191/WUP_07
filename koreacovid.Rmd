@@ -59,13 +59,20 @@ table1 <- xtabs(~result + Sex, data=kRdata)
 rowPerc(table1)
 colPerc(table1)
 ```
-Females alive is 56 percent and males is 44 percent.
+Females alive is 56 percent and males is 44 percent.  
 Females dead is 36 percent and males is 64 percent.
 
 ## Inferential results 
 
-
-
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+The odds of dying if your a male is 44/1411  
+The odds of dying if your a female is 25/1831
+The odds ratio is (44/1411)/(25/1831)  
+The odds of dying are 2.3 to 1  
 
 ## Conclusions
 
