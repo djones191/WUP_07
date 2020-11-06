@@ -21,7 +21,10 @@ kRdata <- read.csv(file = 'kRdata.csv')
 Some of the data was uncoded for sex - sex must be just male or female
 77 of the data entries were coded sex  as blank, so we omit these.
 state of a patient must be died or alive - we adjust that as well   
-  
+
+$H_0$ There is no difference between the amount of men compared to women that die from covid 19.    
+$H_a$ There is a difference between the amount of men compared to women that die from covid19.  
+
 # Question 1 - Is dying independent of sex
 
 
@@ -74,5 +77,8 @@ The odds of dying if your a female is 25/1831
 The odds ratio is (44/1411)/(25/1831)  
 The odds of dying are 2.3 to 1  
 
-## Conclusions
-
+## Conclusions  
+The p value is 0.001 which is less than 0.05  
+The odds ratio is 2.3 to 1   
+We reject the null hypothesis, there is no difference between men and women with regard to dying from covid 19.   
+ 
